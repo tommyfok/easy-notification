@@ -7,4 +7,5 @@ html5 notification plugin (just tested in chrome)
 
 ## Useage
 `EasyNotify(title, content, iconUrl)`
-Well.. i think the params are easy enough to understand.
+> Well.. i think the params are easy enough to understand.
+> Just test it in console.
