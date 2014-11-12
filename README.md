@@ -1,6 +1,5 @@
 #easy-notification
-
-html5 notification plugin (just tested in chrome)
+> html5 notification plugin (just tested in chrome)
 
 ## Installation
 `bower install easy-notification` OR inject `easy-notification.js` to your html
