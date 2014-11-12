@@ -1,10 +1,11 @@
-function EasyNotify(title, content, iconUrl) {
+function EasyNotify(title, content, iconUrl, ifFailedCallback) {
   var Notification = window.Notification || navigator.webkitNotifications,
       content = content || '',
-      iconUrl = iconUrl || 'https://github.com/favicon.ico';
+      iconUrl = iconUrl || 'https://github.com/favicon.ico',
+      ifFailedCallback = typeof ifFailedCallback === 'function' ? ifFailedCallback : function () {};
 
   if (!Notification) {
-    alert('浏览器不支持桌面提醒功能');
+    ifFailedCallback();
   }
 
   else if (Notification.permission === 'granted') {
