@@ -10,14 +10,14 @@ function EasyNotify(title, content, iconUrl, ifFailedCallback) {
 
   else if (Notification.permission === 'granted') {
     var notification = new Notification(title, {icon: iconUrl, body: content});
-    notification.onclick = window.focus();
+    notification.onclick = window.focus;
   }
 
   else if (Notification.permission !== 'denied') {
     Notification.requestPermission(function (permission) {
       if (permission === 'granted') {
         var notification = new Notification(title, {icon: iconUrl, body: content});
-        notification.onclick = window.focus();
+        notification.onclick = window.focus;
       } else {
         window.Notification = function () {};
       }
