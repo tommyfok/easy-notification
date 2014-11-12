@@ -1,0 +1,21 @@
+{
+  "name": "easy-notification",
+  "main": "easy-notification.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/tommyfok/easy-notification",
+  "authors": [
+    "霍崇波 <154274174@qq.com>"
+  ],
+  "description": "very simple html5 notification plugin, just for chrome",
+  "keywords": [
+    "Notification"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
